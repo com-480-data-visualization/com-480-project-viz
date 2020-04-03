@@ -63,12 +63,12 @@ Mostly used words in the title:
 
 # Related work
 
-Other approaches with the same dataset includes :
-What is the most frequent type of video?
-Is the distribution of views, likes, comments and engamet equal for all categories?
-Do we have normal distribution to the values?
-What are the most frequent names in title, description, tags?
+Other approaches with the same dataset includes:
 
+- What is the most frequent type of video?
+- Is the distribution of views, likes, comments and engamet equal for all categories?
+- Do we have normal distribution to the values?
+- What are the most frequent names in title, description, tags?
 
 Our approach is original from the other common analysis due to the way it is meant to be used. As stated in our problematic it should help new content creators optimize their videos publishings through the clear visualization of all useful statistics related to other trending videos from the given data.
 
