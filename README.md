@@ -12,7 +12,7 @@
 
 **10% of the final grade**
 
-[Idea, feasibility and goals](milestone1.md)
+[Idea, feasibility and goals](reports/milestone1.md)
 
 ## Milestone 2 (Friday 1st May, 5pm)
 
