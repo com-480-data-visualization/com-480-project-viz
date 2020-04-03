@@ -44,6 +44,10 @@ In the total appearances in trending analysis, there is a great difference betwe
 
 ### Category analysis
 
+Number of videos per category:
+
+![Number of videos per category](imgs/videos_per_category.jpg)
+
 Grouping the dataset by category, we computed numerous statistics such as the distribution of the number of videos published, likes, dislikes, views, and comments. Aggregating such statistics by publication weekday (also done by hour and month) we found interesting insights showing that some categories have a high amount of published videos on specific weekdays. The figure below shows the number of top trending videos published per weekday for three categories: Travel & Events (pink), Gaming (yellow) and Nonprofit & Activism (violet). We can see that Friday is an important day for Gaming and Nonprofit & Activism categories, whereas it’s the least important day for the Events & Travel category.
 
 ![Number of videos published per weekday per category (US only)](imgs/videos_by_weekday_by_category.png)
@@ -60,6 +64,9 @@ Number of words in the title:
 
 Mostly used words in the title:
 ![Most used words](imgs/words_cloud.jpg)
+
+Sentiment analysis on the title:
+![Sentiment analysis](imgs/sentiment_analysis.jpg)
 
 # Related work
 
