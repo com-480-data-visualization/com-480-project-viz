@@ -12,6 +12,7 @@
 
 **10% of the final grade**
 
+[Idea, feasibility and goals](milestone1.md)
 
 ## Milestone 2 (Friday 1st May, 5pm)
 
@@ -23,4 +24,3 @@
 ## Milestone 3 (Thursday 28th May, 5pm)
 
 **80% of the final grade**
-
