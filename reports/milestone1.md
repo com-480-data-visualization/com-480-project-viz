@@ -32,11 +32,13 @@ We aim to analyze and expose four dimensions of our dataset: title, publish date
 
 ### Publish date analysis
 
-Concerning the publish date and time analysis, we did a yearly, monthly, weekday and hourly analysis to understand when videos are published the most. Our data contains different countries which means we need to be aware of different time zones and inversion of seasons. Some basic statistics we found are:
+We did a yearly, monthly, weekday and hourly analysis to understand when videos are published. Our data contains different countries which means we need to be aware of different time zones and inversion of seasons.
+
+Some basic statistics we found are:
 
 - An increasing number of views in trending videos throughout the years
 - Most months have the same popularity, but some are very low
-- Without taking into account the categories, videos tend to be published by the end of the day in general
+- Videos tend to be published by the end of the day in general
 
 To go deeper in the time analysis it will also be interesting to find the evolution of the number of views of each category throughout the years.
 
