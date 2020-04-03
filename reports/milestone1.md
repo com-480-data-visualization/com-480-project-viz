@@ -72,10 +72,12 @@ Sentiment analysis on the title:
 
 Other approaches with the same dataset includes:
 
-- What is the most frequent type of video?
-- Is the distribution of views, likes, comments and engamet equal for all categories?
-- Do we have normal distribution to the values?
-- What are the most frequent names in title, description, tags?
+- What is the most frequent type of video.
+- Is the distribution of views, likes, comments and engamet equal for all categories.
+- Do we have normal distribution to the values.
+- What are the most frequent names in title, description, tags.
+- [Youtube Video Title Generator by LSTM + EDA](https://www.kaggle.com/somang1418/youtube-video-title-generator-by-lstm-eda)
+- [Exploring Youtube Trending Statistics EDA](https://www.kaggle.com/donyoe/exploring-youtube-trending-statistics-eda)
 
 Our approach is original from the other common analysis due to the way it is meant to be used. As stated in our problematic it should help new content creators optimize their videos publishings through the clear visualization of all useful statistics related to other trending videos from the given data.
 
