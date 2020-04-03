@@ -29,5 +29,27 @@ This website will be fully interactive and ensure an easy way to get some statis
 
 # Exploratory Data Analysis
 
+We aim to analyze and expose four dimensions of our dataset: title, publish date, category, and geographical region.
+
+Concerning the publish date and time analysis, we did a yearly, monthly, weekday and hourly analysis to understand when videos are published the most. Our data contains different countries which means we need to be aware of different time zones and inversion of seasons. Some basic statistics we found are:
+
+- An increasing number of views in trending videos throughout the years
+- Most months have the same popularity, but some are very low
+- Without taking into account the categories, videos tend to be published by the end of the day in general
+
+To go deeper in the time analysis it will also be interesting to find the evolution of the number of views of each category throughout the years.
+
+In the total appearances in trending analysis, there is a great difference between videos and channels. Using videos solely, the videos with most appearances tend to be movie trailers. When looking at channels, here we have the most popular channels with a big variety of content. Finally, the biggest mean number of appearances per video of each channel shows a lot of music videos.
+
+Grouping the dataset by category, we computed numerous statistics such as the distribution of the number of videos published, likes, dislikes, views, and comments. Aggregating such statistics by publication weekday (also done by hour and month) we found interesting insights showing that some categories have a high amount of published videos on specific weekdays. The figure below shows the number of top trending videos published per weekday for three categories: Travel & Events (pink), Gaming (yellow) and Nonprofit & Activism (violet). We can see that Friday is an important day for Gaming and Nonprofit & Activism categories, whereas it’s the least important day for the Events & Travel category.
 
 ![Number of videos published per weekday per category (US only)](imgs/videos_by_weekday_by_category.png)
+
+The title analysis gives the average number of words in the title as well as the top Bigram of a given category in a given country.
+
+
+# Related work
+
+Our approach is original from the other common analysis due to the way it is meant to be used. As stated in our problematic it should help new content creators optimize their videos publishings through the clear visualization of all useful statistics related to other trending videos from the given data.
+
+This dataset is completely new for all of the team members.
