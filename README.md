@@ -18,8 +18,7 @@
 
 **10% of the final grade**
 
-
-
+[Sketch and planification](reports/milestone2.md)
 
 ## Milestone 3 (Thursday 28th May, 5pm)
 
