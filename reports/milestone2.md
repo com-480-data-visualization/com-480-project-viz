@@ -4,6 +4,8 @@ Our project goal is to take a YouTube content creator through a series of visual
 
 ## Sketches of the visualization
 
+See pdf in this same directory.
+
 ![Sketch 1](imgs/milestone2/sketch1.png)
 ![Sketch 2](imgs/milestone2/sketch2.png)
 ![Sketch 3](imgs/milestone2/sketch3.png)
