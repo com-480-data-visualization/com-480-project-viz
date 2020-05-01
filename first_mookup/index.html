@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Data viz</title>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/general.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/2.2.0/topojson.min.js"></script>
+    </head>
+
+    <body>
+
+        <section id="title-section">
+            <div class="container">
+                <div class="row">
+                    <h1>How to get your video trending on</h1>
+                    <img src="img/youtube_logo.png">
+                </div>
+            </div>
+        </section>
+
+        <section id="user-input-section">
+            <div class="container">
+                <div class="row">
+                    <div class="centered-60-width">
+                        <select name="cars" class="custom-select" placeholder="Select a category">
+                            <option selected disabled>Select a category...</option>
+                            <option value="volvo">Volvo</option>
+                            <option value="fiat">Fiat</option>
+                            <option value="audi">Audi</option>
+                        </select>
+
+                        <input type="text" class="form-control" id="title" placeholder="Your video title...">
+
+                        <button type="button" class="btn btn-dark" id="start">Show me how to optimize my video 👉</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="visualization-section" class="visualization bg-dark">
+            <div class="container">
+                <div class="row" id="world_overview">
+                    <h1>How are things in your country?</h1>
+
+                    <img src="img/world_map.png">
+
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-8">
+                        <img src="img/tags_usage.png" style="max-width: 70%">
+                    </div>
+                    <div class="col-sm-4 mt-4">
+                        <br><br><br><br><br><br>
+                        <h3>Those are widely used tags</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="visualization2-section" class="visualization">
+            <div class="container">
+                <div class="row">
+                    <h1>Let's see how to optimize your title 🤔</h1>
+
+                    <p>Length is important! Don't be to short but don't bore your viewers</p>
+                    <img src="img/title_count.jpg">
+
+                    <p>Force directed treegram with mouseover to enable a better visualization of most used words in different categories so that the user can optimize its target for the right category</p>
+
+                    <img src="img/trigrams2.jpg">
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-8">
+                        <img src="img/word_cloud.jpg" style="max-width: 70%">
+                    </div>
+                    <div class="col-sm-4 mt-4">
+                        <br><br><br>
+                        <h3>Wordcloud graph related to words most used in titles of this category.</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="visualization3-section" class="visualization bg-dark">
+            <div class="container">
+                <div class="row">
+                    <h1>Timing is everything ⏱</h1>
+
+                    <img src="img/timing.jpg">
+
+
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4 mt-4">
+                        <br><br><br>
+                        <h3>Heatmap with one axis of days of the week and one with hours of a day. The color intensity adjusts to number of views.</h3>
+                    </div>
+                    <div class="col-sm-8">
+                        <img src="img/heatmap.png" style="max-width: 70%">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <script src="js/main.js"></script>
+    </body>
+
+</html>

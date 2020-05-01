@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Data viz</title>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/main.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="row" id="title">
+                <h1>Get your video trending on YouTube!</h1>
+            </div>
+
+            <div class="row" id="userInput">
+                <!-- Channel selection -->
+                <div id="searchChannel">
+                    <input type="text" id="channelSearchInput" placeholder="Your channel name...">
+                    <div id="searchResults">
+                        <div class="list-group"></div>
+                    </div>
+                </div>
+                <div id="selectedChannel"></div>
+
+                <!-- Title selection -->
+                <input type="text" id="titleInput" placeholder="Your video title...">
+                <div id="selectedTitle"></div>
+            </div>
+
+            <div class="row" id="description">
+                We'll show you how you compare to top trending videos on YouTube.
+            </div>
+
+
+            <div class="row" id="visualization">
+                Here will be visiable all graphs and stuff...
+            </div>
+
+        </div>
+
+
+        <script src="js/youtubeApi.js"></script>
+        <script src="js/userInputWorkflow.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,68 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#title {
+    height: 300px;
+}
+
+#title h1 {
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 300px;
+    text-align: center;
+    width: 100%;
+}
+
+#userInput input:focus {
+    outline: none;
+}
+
+#searchChannel {
+    width: 100%;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+#searchChannel #channelSearchInput, #titleInput {
+    border: 0px;
+    background-color: rgba(26, 56, 96, 0.0980392);
+    height: 50px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+#searchChannel #searchResults {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    border-radius: 8px;
+}
+
+.list-group-item img {
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+#selectedChannel img {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+#selectedChannel {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+#description, #visualization {
+    margin-top: 50px;
+    font-size: 20px;
+}
