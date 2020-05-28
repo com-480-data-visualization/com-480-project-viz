@@ -1,0 +1,144 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+    color: #343a40;
+}
+
+section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.bg-dark {
+    background-color: #f7f7f7;
+    color: #fff;
+}
+
+.centered-60-width {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/*======== TITLE SECTION ========*/
+
+#title-section {
+    height: 500px;
+}
+
+#title-section h1 {
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+    width: 100%;
+    margin-top: 120px;
+}
+
+#title-section img {
+    width: 230px;
+    height: 63px;
+    padding-bottom: 12px;
+}
+
+#title-section h2 {
+    text-align: center;
+}
+
+.mt {
+    margin-top: 40px;
+}
+
+.mt2 {
+    margin-top: 120px;
+}
+
+/*======== USER INPUT SECTION ========*/
+
+#user-input-section input {
+    margin-top: 40px;
+}
+
+#user-input-section button {
+    margin: 0px auto;
+    margin-top: 40px;
+    padding: 10px 20px;
+    font-size: 24px;
+}
+
+/*======== VISUALIZATION SECTION ========*/
+
+.visualization {
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.visualization img {
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+
+.visualization h1 {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#world_overview img {
+    margin: 20px auto;
+}
+
+/* VISUALIZATIONS */
+
+.axisWhite line, path{
+  stroke: #fff;
+}
+
+.axisWhite text{
+  fill: #fff;
+}
+
+.graph-description {
+    margin-bottom: 80px;
+}
+
+@media (min-width:1200px) {
+    .container.category_distr {
+        max-width: 1500px;
+    }
+}
+
+.category_distr p {
+    font-size: 16px;
+}
+
+.timing_distr p {
+    font-size: 16px;
+}
+
+.category_distr b {
+    color: rgb(250, 119, 53);
+}
+
+.timing_distr b {
+    color: rgb(250, 119, 53);
+}
+
+.category_distr_info {
+    text-align: left;
+}
+
+.category_distr_info > #category_distr_info_title {
+    font-weight: bold;
+    display:block;
+}
+
+.category_distr_info > #category_distr_info_data {
+    font-size: 14px;
+    display: block;
+}
+
+.node:hover{
+    stroke-width: 5px !important;
+}

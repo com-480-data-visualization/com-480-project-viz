@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Data viz</title>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/general.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+        <!-- <script src="https://d3js.org/d3.v5.min.js"></script> -->
+
+        <!-- Function for radial charts -->
+        <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3-scale-radial.js"></script>
+
+        <!-- Color palettes -->
+        <script src="js/d3-scale-chromatic.v1.min.js"></script>
+    </head>
+
+    <body>
+
+        <section id="title-section">
+            <div class="container">
+                <div class="row">
+                    <h1>Top trending <img src="img/youtube_logo.png"> videos</h1>
+                </div>
+                <div class="row mt">
+                    <div class="col-sm-12">
+                        <p>This project aims to help you to publish the next trending video on YouTube. Our visualization provides you essential information on how to optimize your title and publishing time for each video category and country.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section id="user-input-section">
+            <div class="container">
+                <div class="row">
+                    <div class="centered-60-width">
+                        <input type="text" class="form-control" id="title" placeholder="Your video title...">
+
+                        <button type="button" class="btn btn-dark" id="start">Show me how to optimize my video 👉</button>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
+        <section id="visualization-section" class="visualization bg-dark">
+            <div class="container category_distr">
+                <div class="row">
+                    <div class="col-sm-12 graph-description">
+                        <h1>Things are different in each country</h1>
+                        <h3>Discover the <b>average number of views</b> per trending video and the <b>distribution of views per category</b> in each nation.</h3>
+                        <p>Note how in the UK an average trending video has almost 1.3 millions visualizations whereas in Russia, a video gets to trending with as low as 150 thousands views.</p>
+                        <p>Another interesting insight is given by the views per category distribution in each nation. We can see that music is the predominant category with more thatn 55% of all the views, instead Indian producers are more active in the entratainment category.</p>
+                    </div>
+
+                    <div class="col-sm-10">
+                        <svg width="100%" height="720" viewBox="0 -10 1020 680" id="map_category_distr"></svg>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <div class="category_distr_info" style="height:170px;">
+                            <span id="category_distr_info_title"></span>
+                            <span id="category_distr_info_data"></span>
+                            <br>
+                            <p>Percentage of views in each category:</p>
+                        </div>
+                        <svg width="100%" height="550" viewBox="-5 0 310 680" id="bar_chart_category_distr"></svg>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <p>The color indicates the average number ov views per top trending video</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="visualization2-section" class="visualization">
+            <div class="container">
+
+                <div class="row">
+
+                    <h1>Tags are used to rank your video in the search indexes, let's see what are the most used tags and their category 🤔</h1>
+
+                    <div class="col-sm-12" id="circ_pack_container">
+                        <p>The circular packing plot shows tags used more than 1000 times sorted by their category color</p>
+                        <svg width="100%" height="550" id="circ_pack"></svg>
+                    </div>
+
+                    <div class="col-sm-12">
+
+                        <p>The circular bar plot shows the 51 most used tags of each category</p>
+
+                        <!-- Dropdown menu -->
+                        Category: <select id="circ_barplot_button"></select>
+
+                        <!-- Div for the plot -->
+                        <svg width="100%" height="550" id="circ_barplot"></svg>
+                    </div>
+
+                </div>
+
+                <div class="row mt2">
+
+                    <h1>The title is the first thing a user sees!</h1>
+
+                    <div class="col-sm-12">
+                        <p>Take a look at how the average length of the title varies among categories.</p>
+                        <p>See how titles in the "sports" category are on average shorter than in the "cars and vehicles" category</p>
+                        Category: <select id="title_button"></select>
+                        <svg width="100%" height="550" id="title_barplot"></svg>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="visualization3-section" class="visualization bg-dark">
+            <div class="container timing_distr">
+                <div class="row">
+
+                    <div class="col-sm-12 graph-description">
+                        <h1>Timing is everything ⏱</h1>
+                        <h3>What <b>time, weekday and month</b> are top trending videos <b>published</b>?</h3>
+                        <p>Note that videos tend to be published more in the afternoon/evening and end of the week. There are also months where publishers seem to be more active.</p>
+                        <p></p>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <svg width="100%" height="400" id="publish_time_heatmap_weekday"></svg>
+                        <p>The color indicates the number of views of videos published at a given weekday and hour</p>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <br>
+                        <br>
+                        <p>The following heatmap shows when videos are published during the day and in each month. We can see that some months collect more activity.</p>
+                        <p>Note that the number of views in months going from August to November are really low. This is due to the lack of data regarding those months in the dataset.</p>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <svg width="100%" height="400" id="publish_time_heatmap_month"></svg>
+                        <p>The color indicates the number of views of videos published at a given month and hour</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section id="" class="visualization">
+            <p>EPFL, CS 422 - Pablo Pfister - Luis de Lima Carvalho - Stanislas Furrer</p>
+        </section>
+
+
+        <script src="js/main.js"></script>
+        <script src="js/visualizations/map_category_distr.js"></script>
+        <script src="js/visualizations/publish_time_heatmap.js"></script>
+        <script src="js/visualizations/circ_barplot.js"></script>
+        <script src="js/visualizations/tags_bubble.js"></script>
+        <script src="js/visualizations/title_barplot.js"></script>
+    </body>
+
+</html>
