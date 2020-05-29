@@ -1159,6 +1159,7 @@
         }
 
         var tt = CountriesData.hasOwnProperty(d.id) ? d.id : "??"
+        console.log(categoryDataBreakown[tt]);
         BarChart.update(categoryDataBreakown[tt])
     }
 
@@ -1252,7 +1253,7 @@
         BarChart.height = 680 //$(selector).height();
         BarChart.x = d3.scaleLinear().range([0, BarChart.width]);
         BarChart.y = d3.scaleBand().range([0, BarChart.height]).padding(0.2);
-        BarChart.x.domain([0, maxXVal]); //d3.max(data, (d) => d.value)]);
+        BarChart.x.domain([0, d3.max(data, (d) => d.value)]); //d3.max(data, (d) => d.value)]);
         BarChart.y.domain(data.map((d) => d.label));
 
         console.log(BarChart.width, BarChart.height);
@@ -1263,6 +1264,8 @@
             .attr("height", BarChart.height)
 
         const onMouseOver = function(d, i) {
+            console.log(d);
+
             d3.select(this)
                 .attr("fill", "#ee3300")
 
@@ -1325,6 +1328,8 @@
     BarChart.update = function(data) {
         BarChart.x.domain([0, d3.max(data, (d) => d.value)]);
         BarChart.y.domain(data.map((d) => d.label));
+
+        BarChart.svg.selectAll(".axisWhite").call(d3.axisBottom(BarChart.x))
 
         BarChart.svg.selectAll(".bar").data(data)
         .transition().ease(d3.easeCubicOut).duration(1000)
